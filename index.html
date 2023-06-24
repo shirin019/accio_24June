@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Table</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            padding:30px 55px
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: max-content;
+            padding: 20px;
+          
+           margin-left:auto;
+           margin-right:auto;
+         
+        }
+        th, td {
+            border-bottom: 1px solid white;
+            padding-left: 36px;
+            padding-top: 15px;
+            text-align: left;
+            padding-bottom: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img{
+            width: 20px
+        }
+        #phase-1{
+            width: 100%;
+            margin-left:auto;
+           margin-right:auto;
+           display: flex;
+           
+            
+        }
+        input{
+            /* padding-right: 45px; */
+            width: 50%;
+        }
+        #phase-1 input,button{
+            font-size: 15px;
+            font-weight: 300;
+            margin-left:10px;
+            background-color: black;
+            color: white;
+            padding:4px;
+        }
+
+        #complete{
+            width:max-content;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="complete">
+        <div id="phase-1">
+            <input type="text" name='val' placeholder="Search by Name or Symbol" id="search-input">
+            <div style="width: 40%;">
+                <button id="mkt-cap">Sort by Mkt Cap</button>
+                <button id="percentage">Sort by percentage</button>
+            </div>
+            
+        </div>
+        <table id="crypto-table">
+            <thead>
+                <tr>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="data.json"></script>
+    <script src="script.js"></script>
+</body>
+</html>
